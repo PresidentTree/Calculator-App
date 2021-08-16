@@ -1,5 +1,5 @@
 # Frontend-Mentor-Calculator-App
-My solution to Frontend Mentor's Calculator App challenge. Simple calculations work, but it gets buggy beyond that and I have yet to figured out how to fix it.
+My solution to Frontend Mentor's Calculator App challenge. Simple calculations work, but it gets buggy beyond that and I have yet to figured out how to fix it. Help on how to fix it would be helpful.
 
 ![Desktop Calculator](https://raw.githubusercontent.com/PresidentTree/Frontend-Mentor-Calculator-App/main/Calculator%20App%201.jpeg)
 ![Mobile Calculator](https://raw.githubusercontent.com/PresidentTree/Frontend-Mentor-Calculator-App/main/Calculator%20App%202.jpeg)
