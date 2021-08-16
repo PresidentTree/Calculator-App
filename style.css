@@ -26,7 +26,8 @@ main {
   width: 28vmax;
   min-width: 28vmax;
   height: 35vmax;
-  max-height: 85vh;
+  max-height: 85vh !important;
+  min-height: 35vmax;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -191,7 +192,8 @@ a {
 
   .calculator {
     width: 45vmax;
-    max-width: 85vw;
+    max-width: 85vw !important;
+    min-width: 45vmax;
     height: 85vmax;
     min-height: 85vmax;
   }
