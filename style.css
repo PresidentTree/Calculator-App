@@ -1,0 +1,224 @@
+:root {
+  font-size: 62.5%;
+  --thumbColor: hsl(6, 63%, 50%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Spartan";
+  background-color: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  height: min-content;
+  width: min-content;
+  text-align: center;
+}
+
+.calculator {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.top, .screen, .buttons {
+  width: 100%;
+}
+
+.screen, .buttons, button {
+  border-radius: 0.75rem;
+}
+
+.top {
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h3 {
+  margin: 0;
+}
+
+.themes {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: flex-end;
+  width: 35%;
+}
+
+.themes p {
+  margin: 0 0 0.25rem;
+}
+
+.selection {
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.65rem;
+  box-sizing: border-box;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1.5rem;
+  background-color: hsl(223, 31%, 20%);
+  outline: none;
+  margin: 0;
+  border-radius: 1rem;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--thumbColor);
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.screen {
+  background-color: hsl(224, 36%, 15%);
+  height: min-content;
+  text-align: right;
+  font-size: 3rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.screen p {
+  width: min-content;
+  height: min-content;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.buttons {
+  background-color: hsl(223, 31%, 20%);
+  height: min-content;
+  color: hsl(221, 14%, 31%);
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 1.5rem;
+  border-collapse: separate;
+}
+
+td {
+  min-width: 64px;
+  height: 38px;
+}
+
+button {
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-family: inherit;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.25rem hsl(28, 16%, 65%);
+  padding: 0.5rem 0 0;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(0.25rem);
+  box-shadow: none;
+}
+
+.blue, .red {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+}
+
+.blue {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 0.25rem hsl(224, 28%, 35%);
+}
+
+.red {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 0.25rem hsl(6, 70%, 34%);
+}
+
+footer {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/*Mobile screens*/
+@media (max-width: 768px) {
+  body {
+    font-size: 2.5rem;
+  }
+
+  .themes {
+    font-size: 1rem;
+    width: 40%;
+  }
+
+  table {
+    border-spacing: 1.75rem;
+  }
+
+  td {
+    height: 64px;
+  }
+
+  button {
+    font-size: 3rem;
+  }
+
+  .blue, .red {
+    font-size: 1.75rem;
+  }
+}
+
+/*For smaller screens*/
+@media (max-width: 425px) {
+  td {
+    min-width: 15vw;
+    height: 15vw;
+  }
+}
